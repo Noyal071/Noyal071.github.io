@@ -1,0 +1,183 @@
+/* Sets the overall page layout and appearance */
+body {
+    font-family: calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cce7e8;/* Sets a light blue background */
+    text-align: right;
+}
+
+/* make the header image fits properly */
+header img {
+    width: 100%;
+    height: auto;
+}
+
+/* Positions and styles the main heading */
+header h1 {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);/* Ensures perfect centering */
+    font-size: 6.8rem;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Styles the navigation section */
+nav { 
+    padding: 20px 0;
+}
+
+/* Format the navigation menu */
+nav ul {
+    list-style: none;/* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Spacing and positioning */
+nav li {
+    margin: 0 20px;
+    position: relative;
+}
+
+/* Adds a line between menu items */
+nav li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);/* Adjusts exact positioning */
+    width: 1px;/* Thin separator line */
+    height: 80px;
+    background-color: black;
+}
+
+/* Styles the text links navigation */
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.6rem;
+    padding: 140px;
+}
+
+section h2 {
+    text-align: left;
+    font-size: 3.6rem;
+}
+
+/* General styling for all sections */
+section {
+    margin: 30px;
+    padding: 0px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+section h3 {
+    text-align: left;
+    font-size: 3rem;
+}
+
+/* Floats the image in the story section */
+#story img {
+    float: left;
+    margin-right: 20px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styles the facts section list */
+#facts ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+h3 {
+    text-align: left;
+    color: black;
+}
+
+/* Styles the facts section list */
+form {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 98%;
+    display: flex;
+    flex-direction: column;/* Arranges items in a column */
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Styles text fields and text area */
+input, textarea {
+    width: 98%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+/* Adjusts the height and prevents resizing */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Message Input - Custom styling for the message field */
+#message {
+    width: 98%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid black;
+    height: 120px; 
+}
+
+/* Arranges radio buttons */
+.radio-group {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    padding: 10px;
+    width: fit-content;
+}
+
+.radio-group label {
+    font-weight: bold;
+    color: black;
+    margin-right: 5px; 
+}
+
+/* Adjusts size of radio buttons */
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(2);
+}
+
+button {
+    width: 80px; 
+    height: 50px;
+    border: 2px solid grey;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;/* Changes cursor on hover */
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/*Changes button color on hover */
+button:hover {
+    background-color: #73abad; 
+    color: black; 
+    border-color: white;
+}
